@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head><title>TO DO LIST </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body background-image: url("download (1).jpg");>
+<div id='id1'>
+	<h1 text-align="center"> TO DO LIST </h1>
+	<input id ="para" type="text" placeholder="Enter your text" />
+	<input class="button" id="btn" type="button" value="Submit"  />
+	<ul id="ul11"></ul>
+	<script>
+	var e =document.getElementById("para");
+	console.log(e);
+	
+	var e1 = document.getElementById("btn");
+	console.log(e1);
+	 var e5 = document.getElementById("ul11");
+	e1.addEventListener("click", textclick);
+	function textclick () {
+	var e2 = document.createElement("li");
+	var e3 = document.createTextNode(e.value);
+	var btn = document.createElement("button");
+	btn.innerHTML='Delete';
+	btn.setAttribute("class", "btnn");
+	e2.appendChild(e3);
+	e2.appendChild(btn);
+	e5.appendChild(e2);
+	}
+	</script>
+	
+</div>
